@@ -44,3 +44,27 @@ This is an Angular project about a shopping list application. This proyect uses 
 ```
 
 3. The package will be in '.\out\make\squirrel.windows\x64\'
+
+# Notes
+
+- To avoid path too long exception on Windows add "asar" parameter to true in the package.json forge configuration:
+```
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "asar": true
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "ShoppingListApp"
+          }
+        },
+      ]
+    }
+  }
+```
+
+
+
