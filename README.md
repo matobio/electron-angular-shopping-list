@@ -42,3 +42,5 @@ This is an Angular project about a shopping list application. This proyect uses 
 ```
 > npm run make
 ```
+
+3. The package will be in '.\out\make\squirrel.windows\x64\'
